@@ -36,7 +36,6 @@ This **interactive Sales Dashboard** provides a **comprehensive view** of sales 
 🔹 **Tooltip Insights**  
 ![Tooltip Example](./tooltip.png)  
 
-(*Replace `path_to_your_uploaded_imageX.png` with the actual paths after uploading images to your repo*)
 
 ---
 
