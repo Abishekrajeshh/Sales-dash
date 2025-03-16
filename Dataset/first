@@ -1,1 +1,84 @@
+Power BI Sales Dashboard | Power BI End-to-End Project Tutorial 2024
+
+Welcome to Sales Dashboard, where we present an in-depth exploration of the 'End-to-End Power BI Sales Dashboard Project: A Comprehensive Guide.' If you’re eager to unlock the full potential of Power BI and revolutionize your sales analytics, you’ve come to the right place.
+
+In this comprehensive guide, we will take you on a step-by-step journey, providing you with all the tools and knowledge you need to create an end-to-end Power BI Sales Dashboard. Whether you’re new to Power BI or seeking to enhance your skills, our tutorial will equip you with the expertise to build a robust and impactful dashboard that drives meaningful business outcomes.
+
+Table of Contents
+•	The Objective of the Sales Dashboard / Business Problem
+•	Steps to follow for an end-to-end Power BI Project
+•	1) Gather Data
+•	2) Power Query – Data Extract, Transform & Load
+•	3) Create a Date Table
+•	4) Create Data Model in Power BI Desktop
+•	5) Develop Reports in Power BI Desktop
+•	6) Implementing DAX Calculations
+•	Conclusion of Power BI Sales Dashboard Project
+•	Download Power BI Project PBIX File & Excel Dataset
+
+The Objective of the Sales Dashboard / Business Problem
+
+The objective of the report is to analyze and present comprehensive insights into sales, profit, orders, profit margin, and various comparisons. It aims to provide a clear understanding of key performance indicators and trends using Power BI. The report objectives include:
+•	Calculate Total Sales: Display total sales for the selected period.
+•	Calculate Profit: Visualize total profit achieved.
+•	Analyze Orders: Identify order trends.
+•	Calculate Profit Margin: Assess product profitability.
+•	Compare Sales by Product with Previous Year: Analyze sales growth or decline.
+•	Compare Sales by Months with Previous Year: Identify trends by months.
+•	Display Top 5 Cities: Showcase the most lucrative locations.
+•	Compare Profit by Channel with Previous Year: Evaluate profit growth.
+•	Analyze Sales by Customer and Compare with Previous Year: Highlight customer performance.
+•	Create Slicers for Date, City, Product, and Channel: Enable interactive data exploration.
+
+Steps to follow for an End-to-End Power BI Project
+
+1) Gather Data
+Collect the necessary data from databases, spreadsheets, or web services. Ensure accuracy and relevance.
+
+2) Power Query – Data Extract, Transform & Load
+Use Power Query Editor for data cleaning and transformation. This includes removing duplicates, handling missing values, merging datasets, and creating calculated columns.
+
+3) Create a Date Table
+To work with Data Analysis Expressions (DAX) time intelligence functions, a prerequisite is having at least one date table in the model.
+Code for Creating Date Table in Power BI:
+Note: Turn off Auto Date/Time for new files in Power BI Options Setting for better performance.
+
+4) Create Data Model in Power BI Desktop
+Design and create a data model that represents relationships between different tables. Establish keys and hierarchies for accurate analysis.
+
+5) Develop Reports in Power BI Desktop
+Use Power BI Desktop to create reports with visualizations such as charts, tables, and maps. Apply filters, slicers, and drill-through functionalities.
+
+Key Visuals:
+•	Sales By Product and Compare with Last Year
+•	Sales By Month and Compare with Last Year
+•	Sales of Top 5 Cities
+•	Compare Profit by Channel with Previous Year
+•	Sales By Customer and Compare with Last Year
+•	Create Cards for Sales, Profit, Profit Margin & Products Sold
+
+6) Implementing DAX Calculations
+Use Data Analysis Expressions (DAX) to create calculated columns, measures, and calculated tables for complex calculations.
+
+DAX Measures:
+•	Sales = SUM(Sales_Data[Sales])
+•	Sales PY = CALCULATE([Sales], SAMEPERIODLASTYEAR(DateTable[Date]))
+•	Sales vs PY = [Sales] - [Sales PY]
+•	Sales vs PY % = DIVIDE([Sales vs PY],[Sales],0)
+•	Products Sold = SUM(Sales_Data[Order Quantity])
+•	Profit = SUM(Sales_Data[Profit])
+•	Profit LY = CALCULATE([Profit], SAMEPERIODLASTYEAR(DateTable[Date]))
+•	Profit Vs LY = [Profit] - [Profit LY]
+•	Profit vs LY % = [Profit Vs LY]/[Profit]
+•	Profit Margin = DIVIDE([Profit],[Sales],0)
+•	Total Cost = SUM(Sales_Data[Total Cost])
+
+Conclusion of Power BI Sales Dashboard Project
+
+Key Findings for 2019:
+•	Sales decreased by more than 10%.
+•	There is a drop in sales of all the top 7 products.
+•	4 customers are leading to a drop in sales.
+•	The profit margin in the Export channel is higher.
+•	Various insights derived from the report can help in sales optimization.
 
